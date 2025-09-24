@@ -19,4 +19,11 @@ LIBRARIES: Tkinter for GUI interface
           Pandas
           Sklearn
 
+.
+.
+.
+REFERENCES:
+Python Tutorial | Learn Python Programming (geeksforgeeks.org)
+Python Tutorial (w3schools.com)
+The Python Standard Library — Python 3.11.4 documentation
 
