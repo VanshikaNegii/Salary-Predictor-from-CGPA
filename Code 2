@@ -1,0 +1,20 @@
+import pandas as pd
+#from sklearn import datasets, Linear_model
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+lr = LinearRegression()
+df = pd.read_csv("placement.txt")
+x= df.iloc[:,0:1]
+y= df.iloc[:,-1]
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.3, random_state=42)
+regressor = LinearRegression()
+regressor.fit(x_train, y_train)
+y_pred = regressor. regressor.predict(x_test)
+regressor.score(x_test,y_test)
+c = float(input("please enter the CGPA: "))
+a = regressor.predict([[c]])
+print("the salary for your CGPA is ",a," lacs per anum")
+-----------------------------------------
+please enter the CGPA: 5.9
+the salary for your CGPA is [2.38318378]
+lacs per anum
